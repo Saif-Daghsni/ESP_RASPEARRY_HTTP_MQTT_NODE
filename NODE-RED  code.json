@@ -1,0 +1,55 @@
+[
+    {
+        "id": "6a84b6caee4f59f8",
+        "type": "mqtt in",
+        "z": "b833e3b48a201136",
+        "name": "Temperature",
+        "topic": "saif/temp",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "d71e34534cc93aa2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "b623a280115d3ba0",
+                "81b0fea7e0f06e81"
+            ]
+        ]
+    },
+    {
+        "id": "d71e34534cc93aa2",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.59.168.207",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

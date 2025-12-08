@@ -1,0 +1,55 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\APPs\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32 -DCCACHE_ENABLE=0 C:\Users\SaifEddine\OneDrive\Desktop\infotronique\TP_IOT\TPn2 - Copy
+-- Existing sdkconfig 'C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/sdkconfig' renamed to 'C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/sdkconfig.old'.
+-- Found Git: D:/APPs/Espressif/tools/idf-git/2.44.0/cmd/git.exe (found version "2.44.0.windows.1")
+-- Minimal build - ON
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/APPs/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/APPs/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/APPs/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/led_strip": "3.0.1~1" -> "3.0.2"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/led_strip (3.0.1~1)
+NOTICE: [2/2] idf (5.5.0)
+-- Project sdkconfig file C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/sdkconfig
+Loading defaults file C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/sdkconfig.defaults...
+Loading defaults file C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/sdkconfig.defaults.esp32...
+-- Compiler supported targets: xtensa-esp-elf
+-- Found Python3: D:/APPs/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe (found version "3.11.2") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "TPn2" version: 1
+-- Adding linker script C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom/esp32/ld/esp32.rom.newlib-reent-funcs.ld
+-- Adding linker script D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx dht driver efuse esp-tls esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_event esp_http_client esp_hw_support esp_idf_lib_helpers esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espressif__led_strip esptool_py freertos hal heap http_parser log lwip main mbedtls mqtt newlib nvs_flash partition_table pthread sdmmc soc spi_flash tcp_transport vfs wpa_supplicant xtensa
+-- Component paths: D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/app_update D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/bootloader D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/bootloader_support D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/cxx C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/components/dht D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/driver D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/efuse D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp-tls D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_app_format D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_bootloader_format D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_coex D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_common D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_ana_cmpr D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_bitscrambler D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_dac D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_gpio D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_gptimer D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_i2c D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_i2s D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_ledc D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_mcpwm D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_parlio D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_pcnt D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_rmt D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_sdio D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_sdm D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_sdmmc D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_sdspi D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_spi D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_tsens D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_twai D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_uart D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_driver_usb_serial_jtag D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_event D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_http_client D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_hw_support C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/components/esp_idf_lib_helpers D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_mm D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_netif D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_netif_stack D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_partition D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_phy D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_pm D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_ringbuf D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_rom D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_security D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_system D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_timer D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_vfs_console D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esp_wifi C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/managed_components/espressif__led_strip D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/esptool_py D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/freertos D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/hal D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/heap D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/http_parser D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/log D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/lwip C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/main D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/mbedtls D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/mqtt D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/newlib D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/nvs_flash D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/partition_table D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/pthread D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/sdmmc D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/soc D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/spi_flash D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/tcp_transport D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/vfs D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/wpa_supplicant D:/APPs/Espressif/frameworks/esp-idf-v5.5/components/xtensa
+-- Configuring done (32.0s)
+-- Generating done (4.4s)
+-- Build files have been written to: C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build

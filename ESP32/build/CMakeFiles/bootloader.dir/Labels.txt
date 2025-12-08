@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/CMakeFiles/bootloader
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/CMakeFiles/bootloader.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/CMakeFiles/bootloader-complete.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/SaifEddine/OneDrive/Desktop/infotronique/TP_IOT/TPn2 - Copy/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
