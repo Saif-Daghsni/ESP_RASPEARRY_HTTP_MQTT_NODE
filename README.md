@@ -26,9 +26,9 @@ A comprehensive IoT system that monitors temperature and humidity using an ESP32
 
 ## 📊 Software Architecture
 
--ESP32 → WiFi → [MQTT Broker] → Node-RED Dashboard
+ESP32 → WiFi → [MQTT Broker] → Node-RED Dashboard\\
       ↘
--  [ThingSpeak Cloud] → Charts & Analytics
+        [ThingSpeak Cloud] → Charts & Analytics
 
 ---
 
@@ -60,6 +60,7 @@ A comprehensive IoT system that monitors temperature and humidity using an ESP32
 ---
 
 ## 🎥 Démo  
+
 
 
 
