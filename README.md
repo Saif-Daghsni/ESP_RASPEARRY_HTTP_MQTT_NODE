@@ -1,68 +1,65 @@
-# ESP32 IoT Environmental Monitoring & Control System
+# ESP32 IoT Environmental Monitoring & Data Streaming System
 
-## 📋 Project Overview
-A comprehensive IoT system that monitors temperature and humidity using an ESP32 with DHT11 sensor, publishes data to an MQTT broker and ThingSpeak cloud, and enables remote LED control through a Node-RED dashboard.
+## 📋 Overview
+This project implements an IoT solution where an ESP32 reads temperature and humidity values from a DHT11 sensor and sends the data to a Raspberry Pi via MQTT.  
+The Raspberry Pi acts as both **MQTT broker** and **gateway** to a Node-RED dashboard.  
+The ESP32 also uploads the same sensor data to **ThingSpeak** using HTTP for cloud visualization and charting.
 
 ---
 
-## 🎯 Features
-- **Real-time Monitoring**: Reads temperature and humidity from DHT11 sensor  
-- **Dual Data Streaming**: Publishes to MQTT broker and ThingSpeak  
-- **Remote Control**: MQTT-controlled LED via Node-RED dashboard  
-- **Fault Tolerance**: Retry mechanisms for sensor readings  
-- **Retained Messages**: MQTT retain flag for instant subscriber updates  
-- **Visual Dashboard**: Node-RED interface for monitoring and control  
+## 🚀 Features
+- Real-time temperature & humidity monitoring (DHT11 → ESP32)
+- MQTT data transmission from ESP32 to Raspberry Pi
+- Raspberry Pi as **Mosquitto broker** + **Node-RED host**
+- Node-RED dashboard for live sensor visualization
+- Cloud data uploading to ThingSpeak through HTTP
+- Dual data streaming: **MQTT + HTTP**
+- Automatic reconnection and stable communication
 
 ---
 
 ## 🛠️ Hardware Requirements
-- ESP32 Development Board  
-- DHT11 Temperature & Humidity Sensor  
-- LED  
+- ESP32 development board  
+- DHT11 temperature & humidity sensor  
+- Raspberry Pi (with Mosquitto + Node-RED)  
 - Jumper wires, breadboard  
-- USB cable
+- USB cable (ESP32 connected to PC)
 
 ---
 
-## 📊 Software Architecture
+## 📡 System Architecture
 
 ```
-ESP32 → WiFi → [MQTT Broker] → Node-RED Dashboard
+DHT11 → ESP32 → MQTT → Raspberry Pi (Broker + Gateway) → Node-RED Dashboard
       ↘
-        [ThingSpeak Cloud] → Charts & Analytics
+        HTTP → ThingSpeak Cloud → Charts & Analytics
 ```
 
 
 ---
 
-## 📈 Data Flow
-- ESP32 reads the DHT11 sensor every 5 seconds  
-- Publishes temperature and humidity to MQTT with the retain flag enabled  
-- Sends the same data to ThingSpeak via HTTP POST requests  
-- Node-RED subscribes to MQTT topics and displays real-time readings  
-- LED is controlled through Node-RED → MQTT → ESP32  
+## 🔄 Data Flow
+1. DHT11 sensor is connected to the ESP32.  
+2. ESP32 is powered and programmed from the PC.  
+3. ESP32 sends temperature & humidity to the Raspberry Pi using MQTT (via Pi IP).  
+4. Raspberry Pi receives the MQTT messages and exposes them to Node-RED.  
+5. Node-RED displays real-time values on the dashboard.  
+6. ESP32 also sends the same data to ThingSpeak using HTTP requests.  
+7. Raspberry Pi is used through the university’s computer peripherals.
 
 ---
 
-## 🔒 Error Handling & Recovery
-- Automatic WiFi reconnection on disconnect  
-- DHT11 retry mechanism (2 attempts per reading)  
-- MQTT auto-reconnection handling  
-- Validation of sensor values before publishing  
-- HTTP timeout protection (5 seconds) for ThingSpeak requests  
 
----
 
 ## 🖥️ Dashboard Features
 - Real-time temperature and humidity gauges  
 - Historical trend charts  
 - LED control toggle button  
-- Connection and sensor status indicators  
-- Data logging and visualization tools  
 
 ---
 
 ## 🎥 Démo  
+
 
 
 
