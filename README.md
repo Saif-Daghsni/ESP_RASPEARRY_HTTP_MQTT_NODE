@@ -59,6 +59,7 @@ DHT11 → ESP32 → MQTT → Raspberry Pi (Broker + Gateway) → Node-RED Dashbo
 ---
 
 ## 🎥 Démo  
+https://drive.google.com/file/d/1Vlfj0a7QMISLZJAqD-XoTgDpcHZoZpPd/view?usp=drive_link
 
 
 
